@@ -1,0 +1,246 @@
+:root {
+
+    /*Primary*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /*Gradients - Background*/
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    /*Circle*/
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--White);
+}
+
+p {
+    font-size: 18px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-result {
+    text-align: center;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.card-result h1 {
+    font-size: 1.2em;
+    color: var(--Light-lavender);
+    padding-top: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+.number {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #4D21C9 0%,
+            rgba(37, 33, 201, 0) 100%,
+            rgba(37, 33, 201, 0) 100%);
+    border-radius: 75px;
+}
+
+.number h2 {
+    font-size: 4em;
+    color: var(--White);
+    padding-top: 1.5rem;
+    font-weight: 800;
+}
+
+.number p {
+    font-size: 1em;
+    margin-top: -3.7rem;
+    opacity: 0.5;
+}
+
+.card-result p {
+    color: var(--Light-lavender);
+}
+
+.title h3 {
+    font-size: 1.5em;
+    color: var(--White);
+}
+
+.title p {
+    margin-top: -0.9rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 3rem;
+    font-size: 1em;
+}
+
+.card-summary {
+    margin: 0rem 2rem;
+}
+
+.all-results {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+    border-radius: 10px;
+}
+
+.sum-title {
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+    margin: 1.5rem 0rem;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.060);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.060);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.060);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.060);
+}
+
+.left {
+    display: flex;
+}
+
+.left img {
+    padding: 0rem 0.7rem 0rem 1rem;
+}
+
+.l-rect p {
+    color: var(--Light-red);
+}
+
+.l-mem p {
+    color: var(--Orangey-yellow);
+}
+
+.l-verb p {
+    color: var(--Green-teal);
+}
+
+.l-vis p {
+    color: var(--Cobalt-blue);
+}
+
+.hundred p {
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+.hundred p span {
+    color: hsl(224, 30%, 27%, 0.4);
+    padding-left: 0.5rem;
+}
+
+.continue {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.continue a {
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+    padding: 1rem 7.5rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.continue a:hover {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 700px) {
+    body {
+        background-color: var(--White);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 25rem 0rem;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--White);
+        max-width: 660px;
+        max-height: 409px;
+        border-radius: 25px;
+        box-shadow: 5px 20px 30px hsla(241, 81%, 54%, 0.077);
+    }
+
+    .card-result {
+        border-radius: 25px;
+        max-width: 300px;
+    }
+
+    .hundred {
+        font-size: 0.9em;
+        padding-top: 0.2rem;
+    }
+
+    .sum-title {
+        margin: 2rem 0rem 1rem 0rem;
+        font-size: 1.2em;
+    }
+
+    .left img {
+        padding: 0rem 0.6rem 0rem 0.8rem;
+    }
+
+    .card-summary {
+        width: 240px;
+        margin: 1rem 2rem;
+    }
+
+    .all-results {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.8rem 0.1rem;
+        border-radius: 10px;
+    }
+
+    .continue a {
+        padding: 0.7rem 5.4rem;
+        font-weight: 700;
+        font-size: 1em;
+    }
+
+}
